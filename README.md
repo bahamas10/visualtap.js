@@ -3,6 +3,8 @@ visualtap.js
 
 Add a visual aspect to touch events on any dom element
 
+** supports multi-touch! **
+
 Usage
 -----
 
