@@ -19,6 +19,7 @@ function visualtap(elem, opts) {
   div.style.position = 'absolute';
   div.style.border = opts.border || '2px solid white';
   div.style.borderRadius = opts.borderRadius || '100px';
+  div.style.zIndex = '9999';
 
   // add the event listeners on touch
   elem.addEventListener('touchstart', touchstart, false);
