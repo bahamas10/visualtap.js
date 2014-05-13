@@ -1,7 +1,9 @@
 NAME = visualtap
 
-default: min
-min:
-	uglifyjs -cm --comments < $(NAME).js > $(NAME).min.js
+$(NAME).min.js: $(NAME).js
+	uglifyjs -cm --comments < $< > $@
+
 clean:
 	rm -f $(NAME).min.js
+
+.PHONY: clean
